@@ -2,7 +2,8 @@ import "./App.css";
 
 function App() {
   
-  let name = "Akshay";
+  let name1 = "Akshay";
+  let name2 = "Sagar";
 
   let num1 = 10;
 
