@@ -163,3 +163,12 @@ export default App;
 // step 7. create a useState list variable and put the data in that variable
 
 // step 8. access that variable in table using map
+
+
+// GET : (`api`)
+
+// POST : (`api` , object)
+
+// DELETE : (`api/${id}`) or ("api/"+id)
+
+// PUT : (`api/${id}` , object )    or    ("api/"+id , object)
