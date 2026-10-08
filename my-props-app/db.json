@@ -1,0 +1,23 @@
+{
+  "employees": [
+    {
+      "name": "raj",
+      "role": "developer",
+      "salary": "123123",
+      "id": "t4jnhDyrsx4"
+    },
+    {
+      "name": "tina",
+      "role": "tester",
+      "salary": "123412",
+      "id": "4O2rDAqh-0g"
+    },
+    {
+      "name": "jay",
+      "role": "admin",
+      "salary": "123123",
+      "id": "uLjqhIedQ6c"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
