@@ -1,0 +1,32 @@
+{
+  "tickets": [
+    {
+      "name": "raj",
+      "dept": "Testing",
+      "issueType": "Internet",
+      "priority": "HIGH",
+      "status": "RESOLVED",
+      "date": "2026-10-09T06:15:29.408Z",
+      "id": "Xo9zlVCiiu0"
+    },
+    {
+      "name": "neha",
+      "dept": "Development",
+      "issueType": "Internet",
+      "priority": "HIGH",
+      "status": "REJECT",
+      "date": "2026-10-09T06:23:20.328Z",
+      "id": "lr-HS6P3YME"
+    },
+    {
+      "name": "asdwer",
+      "dept": "HR",
+      "issueType": "Email",
+      "priority": "Medium",
+      "status": "RESOLVED",
+      "date": "2026-10-09T06:27:52.245Z",
+      "id": "QJT3RalgXIo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
