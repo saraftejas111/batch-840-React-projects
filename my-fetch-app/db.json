@@ -1,0 +1,23 @@
+{
+  "employees": [
+    {
+      "name": "raj patil",
+      "role": "developer",
+      "salary": 123456,
+      "id": "r_WXfRTiBOc"
+    },
+    {
+      "id": "3SmtNW5-b3Y",
+      "name": "tejas",
+      "role": "react",
+      "salary": "23131"
+    },
+    {
+      "id": "GZDL5nU1GkA",
+      "name": "raj",
+      "role": "dev",
+      "salary": "21212"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
