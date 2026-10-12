@@ -1,9 +1,16 @@
 import axios from 'axios';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-const EmpForm = ({refresh}) => {
+const EmpForm = ({refresh , acceptEmp}) => {
 
     const [form , setForm] = useState({name:'' , role:'developer' , salary:''})
+
+
+    useEffect(()=>{
+        if(acceptEmp){
+            setForm(acceptEmp)
+        }
+    },[acceptEmp])
 
     const handleChange = (e) => {
 
@@ -18,15 +25,20 @@ const EmpForm = ({refresh}) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        let res = await axios.post(`http://localhost:3000/employees` , form)
-        console.log(res)
+      if (acceptEmp) {
+          let res = await axios.put(`http://localhost:3000/employees/${form.id}` , form)
+    
+      } else {
+          let res = await axios.post(`http://localhost:3000/employees` , form)
+        
+      }
         clearForm(); 
         refresh(1)
 
     }
   return (
     <div>
-        <h2>Add Employee Form</h2>
+        <h2>{acceptEmp ? "Update Employee Form" : "Add Employee Form"}</h2>
 
         <form onSubmit={handleSubmit}>
             name: <input type="text" name='name' value={form.name} onChange={handleChange} required/> <br /><br />
@@ -41,7 +53,7 @@ const EmpForm = ({refresh}) => {
              <br /><br />
             salary: <input type="text" name='salary' value={form.salary} onChange={handleChange} required/> <br /><br />
        
-       <button type="submit">Add Employee</button>
+       <button type="submit">{acceptEmp ? "Update Employee" : "Add Employee"}</button>
        
         </form>
     </div>

@@ -1,0 +1,23 @@
+{
+  "products": [
+    {
+      "name": "samsung 26 ultra",
+      "catagory": "mobiles",
+      "price": 140456,
+      "id": "hGckjzzGSQg"
+    },
+    {
+      "name": "Lenovo thinkpad",
+      "catagory": "Laptops",
+      "price": 170456,
+      "id": "Gsdqou64EWE"
+    },
+    {
+      "name": "moto edge 70 fusion",
+      "catagory": "mobiles",
+      "price": "70000",
+      "id": "VhxgaVBcvGU"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

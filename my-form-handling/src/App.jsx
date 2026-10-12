@@ -3,6 +3,8 @@ import './App.css'
 import EmployeeForm from './EmployeeForm';
 import StudentForm from './StudentForm';
 import Destructuring from './Destructuring';
+import RideBooking from './RideBooking';
+import Login from './Login';
 
 
 const App = () => {
@@ -15,9 +17,13 @@ const App = () => {
 
            {/* <EmployeeForm/> */}
 
-           <StudentForm/>
+           {/* <StudentForm/> */}
 
-           <Destructuring/>
+           {/* <Destructuring/> */}
+
+           {/* <RideBooking/> */}
+
+           <Login/>
       </center>
     </div>
   )

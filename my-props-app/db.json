@@ -1,22 +1,22 @@
 {
   "employees": [
     {
-      "name": "raj",
+      "name": "raj pawar",
       "role": "developer",
       "salary": "123123",
       "id": "t4jnhDyrsx4"
     },
     {
-      "name": "tina",
-      "role": "tester",
+      "name": "tina patil",
+      "role": "manager",
       "salary": "123412",
       "id": "4O2rDAqh-0g"
     },
     {
-      "name": "jay",
-      "role": "admin",
-      "salary": "123123",
-      "id": "uLjqhIedQ6c"
+      "name": "qq",
+      "role": "developer",
+      "salary": "12123",
+      "id": "6sQxJ4phrjw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

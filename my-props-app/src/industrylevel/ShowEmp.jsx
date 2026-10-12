@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
-const ShowEmp = ({ doRefresh }) => {
+const ShowEmp = ({ doRefresh , handleEdit }) => {
   const [allemp, setAllemp] = useState([]);
 
   const [cat, setCat] = useState("name");
@@ -62,11 +62,19 @@ const ShowEmp = ({ doRefresh }) => {
           <option value="role">role</option>
         </select>
         <br />{" "}
-        <input
+       {
+        cat == 'role' ?  <select name="cat" value={val} onChange={(e)=>(setVal(e.target.value))} required>
+                <option value="developer">developer</option>
+                <option value="tester">tester</option>
+                <option value="admin">admin</option>
+                <option value="hr">hr</option>
+                <option value="manager">manager</option>
+            </select> :  <input
           type="text"
           value={val}
           onChange={(e) => setVal(e.target.value)}
         />
+       }
       </h3>{" "}
       <button onClick={handleSearch}>Search</button>{" "}
       <button onClick={loadAllEmps}>Show All</button>
@@ -89,7 +97,8 @@ const ShowEmp = ({ doRefresh }) => {
               <td>{e.role}</td>
               <td>{e.salary}</td>
               <td>
-                <button onClick={() => handleDelete(e.id)}>Delete</button>
+                <button onClick={() => handleDelete(e.id)}>Delete</button> {" "}
+                <button onClick={() => handleEdit(e)}>Edit</button>
               </td>
             </tr>
           ))}

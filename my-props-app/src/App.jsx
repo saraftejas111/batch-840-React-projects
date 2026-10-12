@@ -14,6 +14,7 @@ const App = () => {
   const [b , setB] = useState(0)
 
   const [ref , setRef] = useState(0)
+  const [edit , setEdit] = useState(null)
 
   const myName =()=>{
     return "TKA" ;
@@ -27,6 +28,7 @@ const App = () => {
 
         console.log("sum = " , (a+b))
   }
+
 
   return (
     <div>
@@ -51,9 +53,9 @@ const App = () => {
 
   <RevSum revSum={revSum}/> */}
 
-<EmpForm refresh={(e)=>setRef(ref+e)}/>
-
-  <ShowEmp doRefresh={ref}/>
+<EmpForm refresh={(e)=>{setRef(ref+e) , setEdit(null)}} acceptEmp={edit}/>
+====================================================================================
+  <ShowEmp doRefresh={ref} handleEdit={(emp)=>setEdit(emp)}/>
 
       </center>
     </div>

@@ -9,8 +9,6 @@ export const deleteEmployeeById = (id) => {
 
 export const saveEmployee = (emp) => {
   
-
-
     if (employees.find((e)=> emp.id == e.id )) {
         alert('id already exist')
     } else {

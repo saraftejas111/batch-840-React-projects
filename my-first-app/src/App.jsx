@@ -13,6 +13,8 @@ function App() {
 
   let isActive = false ; 
 
+  console.log("hello")
+
   function greet (){
     console.log("Hello From Greet Funtion...")
   }
