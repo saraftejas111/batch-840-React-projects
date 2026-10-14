@@ -1,0 +1,8 @@
+{
+    "igusers" : [
+        {"username" : "tejas18" , "password" : "tejas123" , "mobile" : 1122} , 
+        {"username" : "raj123" , "password" : "raj123" , "mobile" : 3344} ,   
+        {"username" : "sakshi123" , "password" : "sakshi123" , "mobile" : 5566}  , 
+        {"username" : "tina123" , "password" : "tina123" , "mobile" : 7788}   
+    ]
+}
