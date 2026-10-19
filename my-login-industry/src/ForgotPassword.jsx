@@ -34,7 +34,9 @@ const ForgotPassword = () => {
 
   const hadnleUsername = async (e) => {
     e.preventDefault();
-    setMatch(null)
+
+    setMatch(null);
+    
     const { data } = await api.get(`/users`);
 
     const userFound = data.find(
@@ -84,7 +86,10 @@ const ForgotPassword = () => {
       </form>
       {securityquestion && (
         <>
-          <h3>Welocme {user.firstname}, <br /> <br /> please answer this security question <br /> <br /> {securityquestion}</h3>
+          <h3>
+            Welocme {user.firstname}, <br /> <br /> please answer this security
+            question <br /> <br /> {securityquestion}
+          </h3>
           <input
             type="text"
             value={securityans}
@@ -96,7 +101,8 @@ const ForgotPassword = () => {
         </>
       )}
 
-      <br /><br />
+      <br />
+      <br />
 
       {match && (
         <>
