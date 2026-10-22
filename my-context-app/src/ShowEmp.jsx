@@ -8,7 +8,7 @@ const ShowEmp = () => {
     <div>
         <h2>
 
-            ----------------- Employee Details : ---------------------
+            ----------------- Employee's Details : ---------------------
         </h2>
 
         <h3>Name : {emp.name}</h3>
